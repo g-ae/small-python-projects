@@ -34,13 +34,13 @@ if __name__ == "__main__":
         # get inputs
         botinput = Random.choice(Random(), possibilities)
         play = input("What will you play ? [r/p/s] : ")
-        if "rock".__contains__(play):
+        if play in "rock":
             # played rock
             userinput = "rock"
-        elif "paper".__contains__(play):
+        elif play in "paper":
             # played paper
             userinput = "paper"
-        elif "scissors".__contains__(play):
+        elif play in "scissors":
             # player scissors
             userinput = "scissors"
         else:

@@ -18,6 +18,7 @@ if __name__ == "__main__":
 
         # executing what user chose
         if inp:
+            # possible results between 1 and 6 (regular dice)
             rolled = Random.randint(Random(), 1, 6)
             print(f"the dice stopped on {rolled}")
         else:

@@ -1,5 +1,7 @@
-# fibonnaci
-# checks if number is in the fibonacci sequence
+"""
+fibonacci sequence
+checks if the entered number is part of the fibonacci sequence
+"""
 fibonacci = [0, 1]
 
 
