@@ -14,7 +14,7 @@ all projects have been tested with python 3.10
 * collatz-conjecture/collatz-conjecture.py
 * number-guesser.py
 * roll-the-dice.py
-* hangman/hangman.py - not finished
+* hangman/hangman.py - erased
 * rock-paper-scissors.py
 * fibonacci.py
-* password-gen.py - not finished
+* password-gen.py
