@@ -17,3 +17,4 @@ all projects have been tested with python 3.10
 * hangman/hangman.py - not finished
 * rock-paper-scissors.py
 * fibonacci.py
+* password-gen.py - not finished

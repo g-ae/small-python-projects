@@ -8,9 +8,9 @@ if __name__ == "__main__":
         rstr = input(f"do you want to roll the dice ? [y/n] : ").lower()
 
         # check what answer the user gave
-        if rstr == "yes" or rstr == "y" or rstr == "1" or rstr == "ye" or rstr == "true":
+        if rstr in "yes" or rstr == "1" or rstr == "true":
             inp = True
-        elif rstr == "no" or rstr == "n" or rstr == "0" or rstr == "false":
+        elif rstr in "no" or rstr == "0" or rstr == "false":
             inp = False
         else:
             print("not a right answer")
@@ -19,8 +19,7 @@ if __name__ == "__main__":
         # executing what user chose
         if inp:
             # possible results between 1 and 6 (regular dice)
-            rolled = Random.randint(Random(), 1, 6)
-            print(f"the dice stopped on {rolled}")
+            print(f"the dice stopped on {Random.randint(Random(), 1, 6)}")
         else:
             print("okay, stopping the program now.")
             exit(0)

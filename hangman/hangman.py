@@ -3,5 +3,6 @@ from random import Random
 
 
 #while True:
-word = Random.sample(Random(), english_words_lower_alpha_set, 1)
+# can't find a way to get a random word
+word = Random.randrange(Random(), english_words_lower_alpha_set)
 print(word)
