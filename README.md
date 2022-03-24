@@ -3,11 +3,11 @@ small projects I created to learn some python
 
 ### available projects
 the projects are in order of creation date\
+some projects have a bit of info before the actual code\
 updates don't change the order\
 if you want to execute a script, and it has some libraries, install them with :
 ```shell
-cd <directory name>
-py -m pip install -r requirements.txt
+py -m pip install -r requirements/<projectname>.txt
 ```
 all projects have been tested with python 3.10
 
@@ -18,3 +18,4 @@ all projects have been tested with python 3.10
 * rock-paper-scissors.py
 * fibonacci.py
 * password-gen.py
+* timer.py - WIP

@@ -1,10 +1,20 @@
 """
-gonçalo esteves
-13.12.2021
+collatz conjecture
+
+usage:
+py collatz_conjecture.py [number: optional]
+
+if no number is given, the script will ask for one.
+script written so I could learn a bit of Python and the click library (needed for another project)
 """
 
-from termcolor import colored
-import click
+
+try:
+    from termcolor import colored
+    import click
+except ModuleNotFoundError:
+    print("please install the required modules with: \npy -m pip install -r ./requirements/collatz_conjecture.txt")
+    exit(1)
 
 
 @click.command()
@@ -23,7 +33,7 @@ def start(number):
 def collatz(number: int):
     if number == 0:
         print(colored("You can't start with 0.", "red"))
-        exit()
+        exit(0)
     if number % 2 == 0:
         print(colored("/2", "red"))
         number /= 2
@@ -32,7 +42,7 @@ def collatz(number: int):
         print(colored("*3+1", "red"))
     if number == 1:
         print(colored("1", "cyan") + " : end")
-        return
+        exit(0)
     else:
         print(colored(str(number), "cyan"))
         collatz(number)
