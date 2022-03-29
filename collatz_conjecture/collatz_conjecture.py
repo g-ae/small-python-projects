@@ -1,19 +1,8 @@
-"""
-collatz conjecture
-
-usage:
-py collatz_conjecture.py [number: optional]
-
-if no number is given, the script will ask for one.
-script written so I could learn a bit of Python and the click library (needed for another project)
-"""
-
-
 try:
     from termcolor import colored
     import click
 except ModuleNotFoundError:
-    print("please install the required modules with: \npy -m pip install -r ./requirements/collatz_conjecture.txt")
+    print("please install the required modules with: \npy -m pip install -r './collatz_conjecture/requirements.txt'")
     exit(1)
 
 

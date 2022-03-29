@@ -1,12 +1,8 @@
-"""
-
-"""
-
 try:
     from plyer import notification
     import time
 except ModuleNotFoundError:
-    print("please install the required modules with: \npy -m pip install -r ./requirements/timer.txt")
+    print("please install the required modules with: \npy -m pip install -r ./timer/requirements.txt")
     exit(1)
 
 
